@@ -2,8 +2,11 @@ import { useSelector, useDispatch } from 'react-redux';
 
 import { updateFilter } from 'Redux/contactsSlice';
 import { fetchContacts } from 'Helpers/fetchContacts';
-import { addContact as addContactAction } from 'Redux/addContact';
-import { removeContact } from 'Redux/removeContact';
+import {
+  addContact as addContactAction,
+  removeContact,
+} from 'Redux/operations';
+
 // import contacts from 'Data/contacts.json';
 import { ContactForm } from './ContactForm/ContactForm';
 import { Filter } from './Filter/Filter';
